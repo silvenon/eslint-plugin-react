@@ -2,7 +2,6 @@
 
 module.exports = {
   rules: {
-    'jsx-uses-react': require('./lib/rules/jsx-uses-react'),
     'no-multi-comp': require('./lib/rules/no-multi-comp'),
     'prop-types': require('./lib/rules/prop-types'),
     'display-name': require('./lib/rules/display-name'),
@@ -10,10 +9,11 @@ module.exports = {
     'self-closing-comp': require('./lib/rules/self-closing-comp'),
     'no-did-mount-set-state': require('./lib/rules/no-did-mount-set-state'),
     'no-did-update-set-state': require('./lib/rules/no-did-update-set-state'),
-    'react-in-jsx-scope': require('./lib/rules/react-in-jsx-scope')
+    'react-in-jsx-scope': require('./lib/rules/react-in-jsx-scope'),
+    'jsx-uses-react': require('./lib/rules/jsx-uses-react'),
+    'no-deprecated': require('./lib/rules/no-deprecated'),
   },
   rulesConfig: {
-    'jsx-uses-react': 0,
     'no-multi-comp': 0,
     'prop-types': 0,
     'display-name': 0,
@@ -21,6 +21,8 @@ module.exports = {
     'self-closing-comp': 0,
     'no-did-mount-set-state': 0,
     'no-did-update-set-state': 0,
-    'react-in-jsx-scope': 0
+    'react-in-jsx-scope': 0,
+    'jsx-uses-react': 0,
+    'no-deprecated': 0
   }
 };
